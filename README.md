@@ -1,29 +1,29 @@
 # Telegram Bot with GitHub, Weather, and Jokes Integration
 
-This project is a Python Telegram bot that integrates multiple external APIs:
-- GitHub API (to fetch repositories, branches, issues, pull requests, and top starred repos)
-- OpenWeatherMap API (to fetch current weather for a city)
-- Official Joke API (to deliver random jokes)
+This is a Python-based Telegram bot that connects to multiple external APIs to provide fun and useful commands:
+- GitHub API → fetch repositories, branches, issues, pull requests, and top-starred projects
+- OpenWeatherMap API → get live weather updates
+- Official Joke API → deliver random jokes
 
 ---
 
 ## ✨ Features
 
 ✅ `/start` → Greet the user  
-✅ `/repos <username>` → List all repositories of a GitHub user  
-✅ `/toprepos` → Show the top 10 most starred public repositories on GitHub  
-✅ `/branches <owner> <repo>` → Show all branches in a given GitHub repository  
-✅ `/issues <owner> <repo>` → Show open issues in a given GitHub repository  
-✅ `/pullreq <owner> <repo>` → Show open pull requests in a given GitHub repository  
-✅ `/weather <city>` → Get current weather information (requires OpenWeatherMap API key)  
-✅ `/joke` → Get a random joke  
+✅ `/repos <username>` → List all public repositories of a GitHub user  
+✅ `/toprepos` → Show the top 10 most-starred public repositories on GitHub  
+✅ `/branches <owner> <repo>` → List all branches in a GitHub repository  
+✅ `/issues <owner> <repo>` → List open issues in a GitHub repository  
+✅ `/pullreq <owner> <repo>` → List open pull requests in a GitHub repository  
+✅ `/weather <city>` → Get the current weather (requires OpenWeatherMap API key)  
+✅ `/joke` → Get a random joke
 
 ---
 
-## 🔧 Setup
+## 🚀 Setup Instructions
 
-### 1️⃣ Clone the project
+### 1️⃣ Clone this repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Fadi7AY/Telegram_bot.git
+cd Telegram_bot
