@@ -7,6 +7,17 @@ This is a Python-based Telegram bot that connects to multiple external APIs to p
 
 ---
 
+## At a glance
+
+```mermaid
+flowchart LR
+    User["Telegram command"] --> Bot["Python bot"]
+    Bot --> GitHub["GitHub · repos and issues"]
+    Bot --> Weather["OpenWeatherMap · weather"]
+    Bot --> Jokes["Official Joke API"]
+```
+
+
 ## ✨ Features
 
 ✅ `/start` → Greet the user  
@@ -27,3 +38,19 @@ This is a Python-based Telegram bot that connects to multiple external APIs to p
 ```bash
 git clone https://github.com/Fadi7AY/Telegram_bot.git
 cd Telegram_bot
+
+```
+
+## Configuration and entry point
+
+The implementation imports `requests`, `python-dotenv` and the legacy
+`python-telegram-bot` interface (`Updater` / `Filters`). Use a dependency environment compatible with that interface.
+
+Create a local `.env` file with the exact names read by the script:
+
+```dotenv
+TElEGRAM_TOKEN=your_telegram_bot_token
+OpenWeather=your_openweather_api_key
+```
+
+Then run `python3 bot.py`. Keep real credentials out of Git.
